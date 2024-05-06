@@ -40,7 +40,10 @@ const defaultValues = {
 export const SocketContext = createContext<SocketContextData>(defaultValues);
 
 // Socket variabeln är default unconnected
-const socket = io("http://localhost:3000", { autoConnect: true });
+const socket = io(
+  "https://chatapp-server-b346052td-sara-pellnors-projects.vercel.app/",
+  { autoConnect: true }
+);
 
 // Krok för att använda context functionerna och variablerna i alla commponenter
 export const useSocket = () => useContext(SocketContext);

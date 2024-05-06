@@ -1,0 +1,31 @@
+.chatroom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 10%;
+    color: rgb(69, 51, 69);
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.leaveChatroom--btn {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    margin: 5px;
+    font-size: larger;
+    background-color: #895e98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.leaveChatroom--btn:hover {
+    background-color: #6d4b79;
+}

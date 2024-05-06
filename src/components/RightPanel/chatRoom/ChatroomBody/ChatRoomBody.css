@@ -1,0 +1,90 @@
+.chatroom-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.483);
+    color: darkblue;
+    padding: 5px;
+    align-self: baseline;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.chatroom-body:hover {
+    overflow: auto;
+}
+
+/*  start of scrollbar css*/
+.chatroom-body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.chatroom-body::-webkit-scrollbar-track {
+    background: transparent; /* Background color of the track */
+}
+
+.chatroom-body::-webkit-scrollbar-thumb {
+    background: #7C83BC; /* Color of the scrollbar handle */
+    border-radius: 10px; /* sets radius */
+}
+
+.chatroom-body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+}
+/* end of scrollbar css */
+
+.chatroom-body div {
+    max-width: 75%;
+    min-width: 243px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
+
+.chatroom-body > div > h6 {
+    font-size: 6pt;
+    padding: 3px 7px;
+}
+
+/* gif (gif ligger i en p tag) och meddelande text */
+.chatroom-body > div > div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.chatroom-body > div > div > p > img {
+padding-top: 7px;
+padding-bottom: 7px;
+}
+
+.recipient {
+    align-self: flex-start;
+}
+.recipientColor {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2px 14px;
+    border-radius: 1em;
+}
+
+.sender {
+    align-self: flex-end;
+    text-align: end;
+}
+.senderColor {
+    background-color: rgb(219, 236, 251);
+    padding: 2px 14px;
+    border-radius: 1em;
+}
+
+
+
+.faFaceLaugh {
+    padding-top: 2px;
+}

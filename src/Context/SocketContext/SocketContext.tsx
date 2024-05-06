@@ -44,6 +44,9 @@ const socket = io(
   "https://chatapp-server-emwrp96nf-sara-pellnors-projects.vercel.app/",
   {
     autoConnect: true,
+    extraHeaders: {
+      Authorization: "Bearer nqBYRpmrOUpBRGfuOe61XkP87BH6rSw3", // Ersätt 'YOUR_API_KEY' med den faktiska API-nyckeln
+    },
   }
 );
 

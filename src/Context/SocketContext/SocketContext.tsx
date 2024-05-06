@@ -41,7 +41,7 @@ export const SocketContext = createContext<SocketContextData>(defaultValues);
 
 // Socket variabeln är default unconnected
 const socket = io("https://chatapp-server-drab.vercel.app/", {
-  autoConnect: false,
+  autoConnect: true,
 });
 
 // Krok för att använda context functionerna och variablerna i alla commponenter
